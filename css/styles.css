@@ -443,3 +443,9 @@ nav .nav-link-curent {
 .footer .social-link:focus {
   background-color: #31d0aa;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
