@@ -60,7 +60,7 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="button">Order Service</button>
         </div>
       </section>
       <!-- Section Core Principles -->
@@ -440,7 +440,7 @@
         <!-- Social media -->
 
         <div class="social-media">
-          <p class="social-links-title">Social media</p>
+          <p class="footer-block-title">Social media</p>
           <ul class="social-links">
             <li class="social-link-item">
               <a href="" class="social-link">
@@ -472,6 +472,26 @@
             </li>
           </ul>
         </div>
+
+        <!--  Subscription form -->
+
+        <form name="subscribe-form" class="footer-form">
+          <div class="subscribe-field">
+            <label for="subscribe-email" class="footer-block-title"
+              >Subscribe</label
+            >
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              class="subscribe-input"
+              id="subscribe-email"
+            />
+          </div>
+          <button type="submit" class="button subscribe-button">
+            Subscribe
+          </button>
+        </form>
       </div>
     </footer>
 
@@ -481,30 +501,27 @@
       <div class="modal">
         <button type="button" class="modal-btn">Close</button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form class="form" name="contacts_form">
-          <lable class="form-label"
-            >Name<input type="text" name="name" class="form-input"
-          /></lable>
-          <lable class="form-label"
-            >Phone<input type="tel" name="phone" class="form-input"
-          /></lable>
-          <lable class="form-label"
-            >Email<input type="email" name="email" class="form-input"
-          /></lable>
 
-          <label class="form-label"
-            >Comment<textarea
-              name="comment"
-              class="form-input"
-              rows="5"
-            ></textarea>
-          </label>
-          <lable class="form-label"
-            ><input type="checkbox" name="terms" class="form-input" />I accept
-            the terms and conditions of the
-            <a href="#">Privacy Policy</a></lable
-          >
-          <button type="button" class="form-button">Send</button>
+        <form class="form" name="contacts_form">
+          <lable class="form-label">Name</lable>
+          <input type="text" name="name" class="form-input" />
+          <lable class="form-label">Phone</lable>
+          <input type="tel" name="phone" class="form-input" />
+          <lable class="form-label">Email</lable>
+          <input type="email" name="email" class="form-input" />
+          <label class="form-label">Comment</label>
+          <textarea name="comment" class="form-input" rows="5"></textarea>
+          <input
+            type="checkbox"
+            name="terms"
+            value="agree"
+            class="form-input"
+          />
+          <lable class="form-label">
+            I accept the terms and conditions of the
+            <a href="#">Privacy Policy</a>
+          </lable>
+          <button type="submit" class="form-button">Send</button>
         </form>
       </div>
     </div>
