@@ -42,6 +42,7 @@ button {
 /* #endregion */
 /* !==================== */
 /* #region GLOBAL STYLES */
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -252,6 +253,10 @@ nav .nav-link-curent {
   letter-spacing: 0.04em;
   color: #fff;
   border-radius: 4px;
+
+  min-width: 169px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
   transition-property: background-color;
   transition-duration: 250ms;
@@ -508,15 +513,21 @@ nav .nav-link-curent {
   width: 165px;
   height: 40px;
 
-  background: #4d5ae5;
+  background-color: #4d5ae5;
 
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon {
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #404bbf;
 }
 
 /* #endregion Footer */
