@@ -513,28 +513,72 @@
     <!-- #region MODAL -->
     <div class="modal-overlay">
       <div class="modal">
-        <button type="button" class="modal-btn">Close</button>
+        <button type="button" class="modal-close-btn">
+          <svg width="8" height="8" class="icon">
+            <use href="./images/icons.svg#icon_close"></use>
+          </svg>
+        </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
-        <form class="form" name="contacts_form">
-          <lable class="form-label">Name</lable>
-          <input type="text" name="name" class="form-input" />
-          <lable class="form-label">Phone</lable>
-          <input type="tel" name="phone" class="form-input" />
-          <lable class="form-label">Email</lable>
-          <input type="email" name="email" class="form-input" />
-          <label class="form-label">Comment</label>
-          <textarea name="comment" class="form-input" rows="5"></textarea>
-          <input
-            type="checkbox"
-            name="terms"
-            value="agree"
-            class="form-input"
-          />
-          <lable class="form-label">
-            I accept the terms and conditions of the
-            <a href="#">Privacy Policy</a>
-          </lable>
+        <form class="contact-form" name="contacts_form">
+          <lable for="name" class="contact-form-label">Name</lable>
+          <div class="contact-input-container">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="contact-form-input"
+            />
+            <svg width="12" height="12" class="icon">
+              <use href="./images/icons.svg#icon_person"></use>
+            </svg>
+          </div>
+          <lable for="phone" class="contact-form-label">Phone</lable>
+          <div class="contact-input-container">
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              class="contact-form-input"
+            />
+            <svg width="13" height="13" class="icon">
+              <use href="./images/icons.svg#icon_phone"></use>
+            </svg>
+          </div>
+          <lable for="email" class="contact-form-label">Email</lable>
+          <div class="contact-input-container">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="contact-form-input"
+            />
+            <svg width="16" height="12" class="icon">
+              <use href="./images/icons.svg#icon_email"></use>
+            </svg>
+          </div>
+          <div>
+            <label for="comment" class="contact-form-label">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="contact-form-input"
+              rows="5"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="term-container">
+            <input
+              type="checkbox"
+              name="terms"
+              value="agree"
+              class="contact-form-chkbox"
+            />
+            <lable class="contact-form-label">
+              I accept the terms and conditions of the
+              <a href="#">Privacy Policy</a>
+            </lable>
+          </div>
           <button type="submit" class="form-button">Send</button>
         </form>
       </div>
