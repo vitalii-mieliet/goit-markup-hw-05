@@ -1,4 +1,4 @@
-/* Reset CSS */
+/* #region RESET CSS */
 
 *,
 *::before,
@@ -35,8 +35,13 @@ p {
   margin: 0;
 }
 
-/* Global styles */
-
+button {
+  cursor: pointer;
+  border: none;
+}
+/* #endregion */
+/* !==================== */
+/* #region GLOBAL STYLES */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -76,7 +81,6 @@ body {
 .icon {
   fill: none;
 }
-/* Global styles */
 
 .heading-two {
   font-weight: 700;
@@ -105,9 +109,9 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
-/* Header */
-
+/* #endregion */
+/* !==================== */
+/* #region HEADER STYLES */
 .header {
   background-color: #fff;
   border-bottom: 1px solid #e7e9fc;
@@ -202,9 +206,9 @@ nav .nav-link-curent {
 .contacts-link:focus {
   color: #404bbf;
 }
-
-/* Header content */
-
+/* #endregion */
+/* !==================== */
+/* #region HERO STYLES */
 .hero {
   background-color: #2e2f42;
   background-image: linear-gradient(
@@ -237,7 +241,7 @@ nav .nav-link-curent {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.button {
+.hero-button {
   display: block;
   margin: auto;
   background-color: #4d5ae5;
@@ -247,8 +251,6 @@ nav .nav-link-curent {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  cursor: pointer;
-  border: none;
   border-radius: 4px;
 
   transition-property: background-color;
@@ -256,10 +258,14 @@ nav .nav-link-curent {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover,
-.button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: #404bbf;
 }
+
+/* #endregion */
+/* !==================== */
+/* #region BENEFITS STYLES */
 
 .core-list {
   display: flex;
@@ -282,6 +288,9 @@ nav .nav-link-curent {
   height: 112px;
   margin-bottom: 8px;
 }
+/* #endregion */
+/* !==================== */
+/* #region TEAM STYLES */
 
 .team-section {
   background-color: #f4f4fd;
@@ -346,6 +355,10 @@ nav .nav-link-curent {
 .member-card .icon {
   fill: #f4f4fd;
 }
+/* #endregion */
+/* !==================== */
+/* #region PROJECT STYLES */
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -398,8 +411,9 @@ nav .nav-link-curent {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-
-/* #region === Footer === */
+/* #endregion */
+/* !==================== */
+/* #region FOOTER STYLES*/
 
 .footer {
   background-color: #2e2f42;
@@ -485,17 +499,28 @@ nav .nav-link-curent {
   color: #fff;
 }
 
-.footer .button {
+.subscribe-button {
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 4px;
   padding: 8px 24px;
   width: 165px;
   height: 40px;
-  margin: 0;
+
+  background: #4d5ae5;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
 }
+
 .icon {
 }
 
 /* #endregion Footer */
 /* !==================== */
-/* #region Modal */
+/* #region MODAL STYLES */
 
 /* #endregion */
