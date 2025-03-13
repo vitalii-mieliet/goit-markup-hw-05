@@ -48,6 +48,10 @@ textarea {
 /* !==================== */
 /* #region GLOBAL STYLES */
 
+:root {
+  --icon-checked-color: #f4f4fd;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -727,14 +731,14 @@ nav .nav-link-curent {
   border: none;
 }
 
-.chek-box-icon {
+.check-box-icon {
   fill: transparent;
   stroke: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.common-chkbox:checked + label .chek-box-icon {
-  fill: #f4f4fd;
+.common-chkbox:checked + .contact-form-label .check-box-icon {
+  fill: var(--icon-checked-color);
 }
 
 .user-privacy-link {
