@@ -48,10 +48,6 @@ textarea {
 /* !==================== */
 /* #region GLOBAL STYLES */
 
-:root {
-  --icon-checked-color: #f4f4fd;
-}
-
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -566,8 +562,8 @@ nav .nav-link-curent {
   height: 100%;
 
   background: rgba(46, 47, 66, 0.4);
-  opacity: 0;
-  pointer-events: none;
+  /* opacity: 0;
+  pointer-events: none; */
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -710,8 +706,9 @@ nav .nav-link-curent {
 .user-privacy-field {
   margin-bottom: 24px;
 }
+/* Checkbox */
 
-.user-privacy-chkbox {
+/* .user-privacy-chkbox {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -743,6 +740,14 @@ nav .nav-link-curent {
 
 .user-privacy-link {
   color: #4d5ae5;
+} */
+
+.checkbox-icon {
+  fill: black;
+}
+
+.form-button > .checkbox-container {
+  margin-bottom: 24px;
 }
 
 .form-button {
