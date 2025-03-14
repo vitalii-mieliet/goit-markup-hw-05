@@ -11,7 +11,7 @@
   --grey: rgba(46, 47, 66, 0.7);
   --white: #fff;
   --dairy: #fcfcfc;
-  --animation: var(--animation);
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :root {
@@ -553,7 +553,7 @@ nav .nav-link-curent {
   color: #fff;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border var(--animation);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-button .icon {
@@ -587,7 +587,7 @@ nav .nav-link-curent {
   pointer-events: none;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility var(--animation);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -611,7 +611,7 @@ nav .nav-link-curent {
   padding: 72px 24px 24px 24px;
 
   transform: translate(-50%, -50%);
-  transition: transform var(--animation);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -630,7 +630,8 @@ nav .nav-link-curent {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  transition: background-color var(--animation), border var(--animation);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
@@ -643,7 +644,7 @@ nav .nav-link-curent {
   fill: #2e2f42;
   padding: 0;
 
-  transition: fill var(--animation);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover .icon,
@@ -689,7 +690,7 @@ nav .nav-link-curent {
   line-height: 1.17;
   letter-spacing: 0.04em;
 
-  transition: border-color var(--animation);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-input:focus {
@@ -702,7 +703,7 @@ nav .nav-link-curent {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  transition: fill var(--animation);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-input:focus + .contact-input-icon {
@@ -733,6 +734,7 @@ nav .nav-link-curent {
 }
 
 .checkbox-field {
+  margin-bottom: 24px;
 }
 
 .custom-chekbox {
@@ -743,13 +745,16 @@ nav .nav-link-curent {
   height: 16px;
   border-radius: 2px;
   fill: transparent;
-  border: 1px solid #404bbf;
-  transition: background-color var(--animation), fill var(--animation);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .contact-form-label > .custom-chekbox {
   background-color: #404bbf;
   fill: #f4f4fd;
+  border: none;
 }
 
 .privacy-link {
@@ -778,7 +783,7 @@ nav .nav-link-curent {
   text-align: center;
   color: #fff;
 
-  transition: background-color var(--animation);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-button:hover,
